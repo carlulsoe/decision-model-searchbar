@@ -1,0 +1,30 @@
+[project]
+name = "decision-searchbar"
+version = "0.1.0"
+description = "Rank installed apps for a free-text request with a text-only d1 decision model"
+readme = "README.md"
+authors = [
+    { name = "Carl Ulsøe Christensen", email = "carlulsoe@gmail.com" }
+]
+license = "MIT AND LicenseRef-LFM-Open-License-1.0"
+license-files = ["LICENSE", "src/decision_searchbar/d1/LICENSE"]
+requires-python = ">=3.14"
+dependencies = [
+    "httpx>=0.28.1",
+    "numpy>=2.3",
+    "tokenizers>=0.23.3",
+]
+
+[project.optional-dependencies]
+torch = ["safetensors>=0.8.0", "torch>=2.14.1"]
+onnx = ["onnxruntime-gpu>=1.31.0"]
+
+[project.urls]
+Repository = "https://github.com/carlulsoe/decision-model-searchbar"
+
+[project.scripts]
+decision-searchbar = "decision_searchbar:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
