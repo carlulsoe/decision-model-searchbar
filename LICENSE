@@ -19,7 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-The files in src/decision_searchbar/d1/ are from LiquidAI/d1-omni-600M and are
-licensed under the LFM Open License v1.0 (src/decision_searchbar/d1/LICENSE),
-not under the MIT License above.
